@@ -8,11 +8,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val b1 = BicycleBrandX()
 
-        val level = EnumCourse.BEGINNER.type
+        b1.speedUp()
 
-        Log.i("ENUMS","the type is: $level")
-
-        Course().type = EnumCourse.ADVANCE.type
     }
 }
